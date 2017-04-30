@@ -1,0 +1,38 @@
+baseurl = "http://jaicob.com/"
+languageCode = "en-us"
+title = "Jaicob Stewart"
+theme = "hugo-steam-theme"
+
+paginate = 10
+
+[params]
+
+	title = "Jaicob Stewart"
+	subtitle = "Software Engineer & Product Person"
+	copyright = "Released under the MIT license."
+
+	# You can choose between green, orange, red and blue.
+	themeColor = "orange"
+	# Enable Google Analytics be inserting your tracking code
+	googleAnalytics = ""
+
+	# To provide some metadata for search engines and the about section in the footer
+	# feel free to add a few information about you and your website.
+	name = "Jaicob Stewart"
+	bio = "I'm Jaicob. I have a good time working on both the software and the product side of things. In the past i've worked on a variety of projects, which you can check out below. More importantly though, the purpose of me having this site is as a tool to connect or reconnect with folks."
+	description = "I don't have a blog."
+	location = "Athens, GA" # optional
+	twitter = "i_jaicob" 
+	github = "jaicob" 
+
+	# Enable a comment system
+	# You can choose between Disqus or Google Plus by setting comments
+	# to disqus or googleplus. For using Disqus you need to enter your
+	# shortname in disqusShortname at the top of the configs. 
+	comments = "googleplus"
+
+	# Customize or translate the strings
+	keepReadingStr = "Check It Out"
+	backtotopStr = "Back to top"
+	shareStr = "Share"
+	pageNotFoundTitle = "404 - Page not found"
