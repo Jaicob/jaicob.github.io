@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://jaicob.com/</loc>
+  </url>
+  
+  <url>
+    <loc>http://jaicob.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://jaicob.com/project/axon/</loc>
+  </url>
+  
+  <url>
+    <loc>http://jaicob.com/project/cubesat/</loc>
+    <lastmod>2016-10-06T20:38:24-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jaicob.com/project/ugahacks/</loc>
+    <lastmod>2016-10-06T20:38:05-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jaicob.com/project/ios_dev_club/</loc>
+    <lastmod>2016-10-06T20:38:38-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jaicob.com/project/greek_grind/</loc>
+    <lastmod>2016-10-06T21:03:05-04:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jaicob Stewart</title>
+    <link>http://jaicob.com/</link>
+    <description>Recent content on Jaicob Stewart</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://jaicob.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://jaicob.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaicob.com/about/</guid>
+      <description>&lt;p&gt;You can add custom pages like this by adding &lt;code&gt;menu = &amp;quot;main&amp;quot;&lt;/code&gt; in the frontmatter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
+date  = &amp;quot;2015-08-22&amp;quot;
+title = &amp;quot;About me&amp;quot;
+menu  = &amp;quot;main&amp;quot;
++++
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This site is just a usual document. Create a new subfolder in &lt;code&gt;content&lt;/code&gt; and name this document &lt;code&gt;index.md&lt;/code&gt;. For example, I&amp;rsquo;m located under &lt;code&gt;content/about/index.md&lt;/code&gt; to add indicate the subsection &lt;code&gt;/about&lt;/code&gt; in the URL.&lt;/p&gt;
+
+&lt;p&gt;But you can also link posts that way without moving them.&lt;/p&gt;
+
+&lt;p&gt;If no document contains &lt;code&gt;menu = &amp;quot;main&amp;quot;&lt;/code&gt; in the frontmatter the navigation will not be shown. Sounds easy, right?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Axon</title>
+      <link>http://jaicob.com/project/axon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaicob.com/project/axon/</guid>
+      <description>&lt;p&gt;Axon was a startup founded in October of 2014. It operated under the mission to allow tutors to grow and manage their business hassle free, while also allowing students to quickly receive help in their specific college courses (Math 1113 as opposed to just Math). Over the course of two years Axon grew to have a presence on over eight universities across five states. We helped students book over 7400 appointments and gave jobs to over 450 tutors. In early 2016, Axon was acquired by StudySocial to join their suite of educational products. You can read more about the acquistion &lt;a href=&#34;https://medium.com/@axontutors/axon-joining-the-tutor-matching-service-team-4df51c6239cf#.8pd296avm&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cubesat</title>
+      <link>http://jaicob.com/project/cubesat/</link>
+      <pubDate>Thu, 06 Oct 2016 20:38:24 -0400</pubDate>
+      
+      <guid>http://jaicob.com/project/cubesat/</guid>
+      <description>&lt;p&gt;A little over a year a group of UGA students, myself included, began work on establishing the univiersities space program. Today that lab has grants from the Airforce and NASA to build two cubesats(small satellites) over the course of five years. I worked on the early stages of this project while in school still where my primary roles where to teach the team how to work in an agile environment, as well as put together the requirements documentation for the project. You can read more about this endeavor &lt;a href=&#34;http://smallsat.uga.edu/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UGAHacks</title>
+      <link>http://jaicob.com/project/ugahacks/</link>
+      <pubDate>Thu, 06 Oct 2016 20:38:05 -0400</pubDate>
+      
+      <guid>http://jaicob.com/project/ugahacks/</guid>
+      <description>&lt;p&gt;The University of Georgia has a rapidly growing CS department with an increase from 300 to 800 students over the last four years I wanted to give us the chance showcase how far the department has come. By hosting UGAHacks we did a couple things. We brought the entire CS and creator community together for a weekend. We gave students opportunities to flex their skills infront of potential employers. Finally, we established UGA&amp;rsquo;s presence as a notable school for computer science. The event was coordinated over the course of four months where we raised over $25k in funding and worked out logistics to host over 200 participants for a weekend of awesome. You can check more about UGAHacks &lt;a href=&#34;http://www.ugahacks.com/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iOS Dev Club</title>
+      <link>http://jaicob.com/project/ios_dev_club/</link>
+      <pubDate>Thu, 06 Oct 2016 20:38:38 -0400</pubDate>
+      
+      <guid>http://jaicob.com/project/ios_dev_club/</guid>
+      <description>&lt;p&gt;While in my second year of study I developed a strong interest in iOS applications and making them. Unfortunately, there wasn&amp;rsquo;t much of an iOS community in Athens at the time. I developed this group for two primary reasons. One, to attract other iOS developers. Two, to teach others and spark more interest in iOS development. As a result, I was able to teach 40+ students the basics of iOS over the course of a year and begin to establish a more prominent community in the area.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SDT Philanthropy</title>
+      <link>http://jaicob.com/project/greek_grind/</link>
+      <pubDate>Thu, 06 Oct 2016 21:03:05 -0400</pubDate>
+      
+      <guid>http://jaicob.com/project/greek_grind/</guid>
+      <description>&lt;p&gt;Every year the Sigma Delta Tau sorority hosts a fundraising event called &amp;ldquo;Greek Grind&amp;rdquo; As one of my first projects I worked with another team member to develop a website to establish their online presence. The website in combination with their efforts helped to increase donations from $50k-$70k.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
