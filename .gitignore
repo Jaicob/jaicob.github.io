@@ -1,3 +1,4 @@
 ./jaicob/themes/*
 jaicob/themes/hugo-steam-theme
 themes/*
+deploy.sh
