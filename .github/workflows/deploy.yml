@@ -23,6 +23,15 @@ jobs:
         with:
           node-version: 20
           cache: npm
+      - name: Fetch private fonts
+        run: |
+          mkdir -p public/fonts
+          cd public/fonts
+          for file in PPMondwest-Regular.otf PPMori-Regular.otf PPMori-Semibold.otf; do
+            curl -sL -H "Authorization: token ${{ secrets.FONTS_TOKEN }}" \
+              -H "Accept: application/octet-stream" \
+              "https://api.github.com/repos/Jaicob/fonts/contents/${file}" -o "${file}"
+          done
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3

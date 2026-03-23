@@ -5,7 +5,7 @@
 /* PP fonts — local only, not committed. Google Fonts fallback for production. */
 @font-face {
   font-family: 'PP Mondwest';
-  src: url('/fonts/PPMondwest-Regular.woff2') format('woff2');
+  src: url('/fonts/PPMondwest-Regular.otf') format('opentype');
   font-weight: 400;
   font-display: swap;
 }
