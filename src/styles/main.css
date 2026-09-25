@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap');
-
 @import "tailwindcss";
 
-/* PP fonts — local only, not committed. Google Fonts fallback for production. */
+/* PP fonts are copied locally or fetched in CI. index.html loads the fallbacks. */
 @font-face {
   font-family: 'PP Mondwest';
   src: url('/fonts/PPMondwest-Regular.otf') format('opentype');
@@ -148,6 +146,11 @@ p {
 
 .intro p:last-child {
   margin-bottom: 0;
+}
+
+.intro a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 /* ---- Fade-up animation ---- */

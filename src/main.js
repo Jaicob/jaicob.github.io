@@ -88,14 +88,16 @@ app.innerHTML = `
     </header>
 
     <section class="intro fade-up" style="--delay: 100ms">
-      <p>This website historically has not gotten much love, but it is a shame not make use of the domain. For now it  takes the form of a personal notebook.</p>
+      <p>I'm Jaicob and this is my website. I run <a href="https://modedesigns.com">Mode</a>, a small team that makes high-end mechanical keyboards. I am an operator and building with AI to reduce the overhead of running a business and to enable our team to be more ambitious.</p>
     </section>
 
+    ${projects.length ? `
     <section class="projects-section">
       <h2 class="fade-up" style="--delay: 150ms">Notes on AI</h2>
       <p class="projects-description fade-up" style="--delay: 200ms">A catalog of tools, apps, experiments and thoughts related to AI. The AI Summary tag indicates content generated to summarize a project, and the Original tag indicates a note written without AI assistance.</p>
       ${renderProjects()}
     </section>
+    ` : ''}
   </main>
 
   <footer class="site-footer fade-up" style="--delay: 600ms">

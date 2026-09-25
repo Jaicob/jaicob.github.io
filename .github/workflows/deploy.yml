@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -18,32 +16,39 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version-file: .nvmrc
           cache: npm
       - name: Fetch private fonts
+        env:
+          FONTS_TOKEN: ${{ secrets.FONTS_TOKEN }}
         run: |
+          test -n "$FONTS_TOKEN" || { echo "FONTS_TOKEN is required to download fonts"; exit 1; }
           mkdir -p public/fonts
           cd public/fonts
           for file in PPMondwest-Regular.otf PPMori-Regular.otf PPMori-Semibold.otf; do
-            curl -sL -H "Authorization: token ${{ secrets.FONTS_TOKEN }}" \
+            curl --fail --silent --show-error --location --retry 3 \
+              -H "Authorization: token $FONTS_TOKEN" \
               "https://raw.githubusercontent.com/Jaicob/fonts/main/${file}" -o "${file}"
+            test -s "$file"
           done
-          ls -lh .
       - run: npm ci
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
