@@ -47,10 +47,15 @@ repository into `public/fonts/`:
 - `PPMori-Regular.otf`
 - `PPMori-Semibold.otf`
 
-Both font directories are ignored by Git. CI downloads the three files from
-`Jaicob/fonts` using the repository secret `FONTS_TOKEN`. That token needs read
-access to the font repository. The deployed font files are publicly downloadable
-as website assets even though their source repository is private.
+Both font directories are ignored by Git. CI checks out `Jaicob/fonts` into
+`.private-fonts/` and copies the three files into `public/fonts/`. The website
+repository secret `FONTS_DEPLOY_KEY` holds an SSH private key; its public key is
+registered as a read-only deploy key on `Jaicob/fonts`. The checkout does not
+persist credentials for later build steps. When rotating the key, replace both
+the repository secret and the corresponding deploy key.
+
+The deployed font files are publicly downloadable as website assets even though
+their source repository is private.
 
 `.github/workflows/deploy.yml` builds pushes to `master` and supports manual runs.
 It uploads `dist/` to GitHub Pages; GitHub Pages must use GitHub Actions as its

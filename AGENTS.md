@@ -28,7 +28,8 @@ static site using vanilla JavaScript, Vite, Tailwind CSS, and Marked.
 ## Deployment and local files
 
 - GitHub Actions builds and deploys pushes to `master` to GitHub Pages.
-- CI uses `FONTS_TOKEN` to fetch three fonts from `Jaicob/fonts`. Never commit
+- CI uses `FONTS_DEPLOY_KEY`, a read-only SSH deploy key for `Jaicob/fonts`, to
+  fetch three fonts. Never commit
   tokens, `.env` files, private font sources, or local AI permission settings.
 - `Fonts/` is an optional local source folder. Only fonts copied into
   `public/fonts/` reach the site. Both folders are ignored by Git.

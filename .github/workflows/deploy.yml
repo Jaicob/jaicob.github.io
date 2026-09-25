@@ -22,17 +22,19 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - name: Fetch private fonts
-        env:
-          FONTS_TOKEN: ${{ secrets.FONTS_TOKEN }}
+        uses: actions/checkout@v7
+        with:
+          repository: Jaicob/fonts
+          ref: main
+          path: .private-fonts
+          ssh-key: ${{ secrets.FONTS_DEPLOY_KEY }}
+          persist-credentials: false
+      - name: Copy fonts into site
         run: |
-          test -n "$FONTS_TOKEN" || { echo "FONTS_TOKEN is required to download fonts"; exit 1; }
           mkdir -p public/fonts
-          cd public/fonts
           for file in PPMondwest-Regular.otf PPMori-Regular.otf PPMori-Semibold.otf; do
-            curl --fail --silent --show-error --location --retry 3 \
-              -H "Authorization: token $FONTS_TOKEN" \
-              "https://raw.githubusercontent.com/Jaicob/fonts/main/${file}" -o "${file}"
-            test -s "$file"
+            test -s ".private-fonts/$file"
+            cp ".private-fonts/$file" "public/fonts/$file"
           done
       - run: npm ci
       - run: npm run build

@@ -6,6 +6,7 @@ dist/
 .DS_Store
 Fonts/
 public/fonts/
+.private-fonts/
 
 # Machine-local AI permissions and settings
 .claude/settings.local.json
